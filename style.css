@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.header1 {
+    text-align: left;
+}
+
+div.header2 {
+    text-align: right;
+}
+
+div.header2 a:hover {
+    color: #900;
+}
+
+nav {
+    clear: both;
+    background-color: aquamarine;
+    width: auto;
+    height: auto;
+}
+
+nav div.NavContent ul {
+    float: left;
+}
+
+nav div.NavSearch {
+    float: right;
+}
+
+aside#left div ul {
+    margin-left: 40px;
+    list-style-type: circle;
+}
+
+
+div#body {
+    display: table-row;
+    clear: both;
+    background-color: gainsboro;
+}
+
+aside#left, aside#right, section {
+    display: table-cell;
+    vertical-align: top;
+}
+
+aside#left {
+    width: 20%;
+}
+aside#left div.asidestyle ul li a:hover {
+    color: brown;
+}
+
+aside#right {
+    width: 20%;
+}
+div.asidestyle {
+    border: 1px solid blue;
+    border-radius: 2px;
+    box-shadow: 4px 8px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div.centerstyle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(207, 226, 255);
+}
+div.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-container > div {
+    background-color: rgb(200, 229, 243);
+    text-align: center;
+    margin: 5px;
+}
+p.firstparagraph {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+p.firstparagraph {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+div.product-box {
+    border: 2px dotted black;
+    width: 30%;
+    height: 40%;
+}
+p.namebook {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+}
+footer div {
+    background-color: greenyellow;
+    text-align: center;
+}
+table.table1style tr td {
+    padding: 10px; 
+    width: 60%;
+}
+table.table2style tr td {
+    padding: 10px; 
+    width: 74%;
+}
