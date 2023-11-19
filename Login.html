@@ -119,12 +119,37 @@
                                     <input class="form-check-input" type="checkbox" name="remember"> Remember me
                                 </label>
                             </div>-->
-                            <button type="submit" class="btn btn-success">SIGN IN</button>
+                            <button type="submit" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#myModal">SIGN IN</button>
                         </form>
                         <p>Not a member? <a href="#">Register</a></p>
                         <p><span style="font-style: italic;"><a href="#">Change password</a></span></p>
                     </div>
 
+                </div>
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Check information</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Please enter complete information
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </section>
             <aside id="right">
