@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="datetime"></p>
+    <div style="display: flex; justify-content: flex-start;">
+        <p style="font-weight: bold;">Now: </p>
+        <p id="time" style="font-weight: bold;"></p>
+    </div>
+    <div style="display: flex; justify-content: flex-start;">
+        <p style="font-weight: bold;color: blue;">Today: </p>
+        <p id="date" style="font-weight: bold;color: blue;"></p>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            let now = new Date();
+            //const date = now.toLocaleDateString();
+            document.getElementById("datetime").innerHTML = now;
+        }
+
+        setInterval(updateDateTime, 1000);
+        function updateTime() {
+            const now = new Date();
+            const time = now.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit', second: "2-digit", hour12: false });
+            document.getElementById("time").innerHTML = time;
+        }
+
+        setInterval(updateTime, 1000);
+        function updateDate() {
+            let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const now = new Date();
+            const time = now.toLocaleDateString("en-US", options);
+            document.getElementById("date").innerHTML = time;
+        }
+
+        setInterval(updateDate, 1000);
+
+    </script>
+</body>
+
+</html>
